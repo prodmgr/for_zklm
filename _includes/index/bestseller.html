@@ -1,0 +1,13 @@
+{% for post in site.tags.bestseller limit:4 %}
+<div class="cangyun-layout-cell layout-item-4" style="width: 25%">
+  <h2 style="text-align:center;">{{post.title}}</h2>
+  <p style="text-align:center;">
+    <img width="150" height="100" alt="" src="{{post.mainpicurl}}">
+  </p>
+  <h2 style="text-align:center;">{{post.content}}</h2>
+  <p style="text-align:right;">
+    <a class="cangyun-button" href="{{post.url}}">详情</a>
+  </p>
+
+</div>
+{% endfor %}

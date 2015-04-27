@@ -1,0 +1,110 @@
+/* Created by Artisteer v4.1.0.59782 */
+
+.cangyun-header, #cangyun-header-bg, .cangyun-layout-cell, .cangyun-layout-wrapper, .cangyun-footer, .cangyun-nav, #cangyun-hmenu-bg, .cangyun-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.cangyun-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.cangyun-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#cangyun-header-bg 
+{
+   display: none;
+}
+
+.cangyun-hmenu>li, .cangyun-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.cangyun-hmenu, ul.cangyun-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#cangyun-hmenu-bg 
+{
+   display: none;
+}
+
+ul.cangyun-hmenu>li:first-child {
+   padding-right:8px;
+}
+
+ul.cangyun-hmenu ul{
+   background-color: #949494 !important;
+}
+
+.cangyun-content-layout, .cangyun-content-layout-row, .cangyun-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.cangyun-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.cangyun-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.cangyun-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.cangyun-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.cangyun-postheadericons span{
+   zoom: 1;
+}
+.cangyun-postcontent {
+   height: 1%;
+}
+
+.cangyun-postfootericons span{
+   zoom: 1;
+}
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.cangyun-content 
+{
+   width: auto;
+   float:none;
+}
+

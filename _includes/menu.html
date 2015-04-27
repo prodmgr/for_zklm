@@ -1,0 +1,18 @@
+<!-- <nav class="cangyun-nav">
+  <ul class="cangyun-hmenu">
+    <li><a href="shouxie.html" class="active">首页</a></li>
+    <li><a href="jingtailan.html">景泰蓝</a></li>
+    <li><a href="diaoqi.html">雕漆</a></li>
+    <li><a href="liuli.html">琉璃</a></li>
+    <li><a href="huasi.html">花丝</a></li>
+  </ul> 
+</nav> -->
+<nav class="cangyun-nav">
+  <ul class="cangyun-hmenu">
+  {% for page in site.pages %}
+    <li>
+      <a href="{{page.url}}">{{page.title}}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</nav>
