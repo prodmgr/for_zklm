@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="/css/index.css">
+<div class="sectionwrapper">
+  <div class="sectioncolumn" style="width:250px;">
+    <h2 class="subject">最新房屋出租信息</h2>
+    <ul>
+      {% for post in site.categories.forrent limit:5%}
+        <li class="infolist">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%m-%-d"}}&nbsp;&nbsp; {{ post.title }}</a>
+        </li>
+      {% endfor %}
+      <div class="more">
+          <a href="/forrent">
+          更多>>
+        </a>
+      </div>
+    </ul>
+    <h2 class="subject">最新租客求租信息</h2>
+    <ul>
+      {% for post in site.categories.wanted limit:5%}
+        <li class="infolist">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%m-%-d"}}&nbsp;&nbsp;{{ post.title }} </a>
+        </li>
+      {% endfor %}
+      <div class="more">
+          <a href="/wanted">
+          更多>>
+        </a>
+      </div>
+    </ul>
+  </div>
+
+  <div class="sectioncolumn" style="width: 700px;margin-left:20px">
+    <div class="sectioninner">
+      <h1>欢迎来到租客联盟出租/求租信息汇总站</h1>
+      <h2>&nbsp;</h2>
+      <p>
+        本站租房信息由租客联盟群成员提供，仅面向租客联盟群成员，不收取费用，不作任何商业用途，请大家珍惜。
+      </p>
+      <p>&nbsp;</p>
+      <p>
+        信息的真实性和可信度的东西只有通过信息提供人道德和诚信来约束。任何人在使用本站信息的过程中产生纠纷，本站不承担任何法律和道德责任。
+      </p>
+      <p>&nbsp;</p>
+      <p>想找房子的亲们，请到<a href="/forrent" style="font-weight: bold;color:#429ad0">“出租信息”</a>里面找，想出租房屋的亲们，请到<a href="/wanted" style="font-weight: bold;color:#429ad0">“求租信息”</a>里面看看。</p>
+      <p>&nbsp;</p>
+      <p style="font-weight: bolder">
+        本站无法为您解答下列问题，如果您想问的话，请找知情人士或消息灵通人士，实在不行，找警察叔叔。
+      </p>
+      <ul style="list-style: disc;margin-left: 2em">
+        <li>某某某房子房租大概多少钱？房租的合理价位是多少？</li>
+        <li>和房东有纠纷怎么办？</li>
+        <li>遇到黑中介怎么办？</li>
+        <li>不退押金怎么办？</li>
+        <li>...诸如...</li>
+        <li>...此类...</li>
+      </ul>
+    </div>
+  </div>
+</div>

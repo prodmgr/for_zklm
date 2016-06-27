@@ -1,27 +1,14 @@
 ---
-layout: default
+layout: page
 ---
-<p id="nav_text">当前位置：<a href="/">首页</a> > <a href="/{{page.categories}}">{{page.cat_alias}}</a> > {{ page.title }}</p>
-
-
-<div class="cangyun-content-layout-row">
-  <div class="cangyun-layout-cell layout-item-4" style="width: 35%;padding:5px">
-    <img src="{{page.mainpicurl}}" style="width:100%"><br>
-    <div>
-      <p align="center">
-        <a class="cangyun-button" href="{{page.taobaopage}}" target="_blank">去淘宝购买</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="cangyun-button" href="http://www.taobao.com/webww/ww.php?ver=3&touid=tianye6838133&siteid=cntaobao&status=1&charset=utf-8" target="_blank">有问题要问</a>
-      </p>
-    </div>
-
+<div class="sectioncolumn">
+  <div class="sectioninner">
+    <h1>{{page.title}}</h1>
+    <h3>{{page.tag}}</h3>
+      {{ content }}
+    
   </div>
-  <div class="cangyun-layout-cell layout-item-4" >
-    <h1>{{ page.title }}</h1>
-    {{ content }}
+  <div class="more">
+    <a href="#" onclick="history.go(-1)">返回</a>
   </div>
 </div>
-<!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
-<!-- UY END -->

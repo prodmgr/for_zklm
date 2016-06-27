@@ -1,25 +1,14 @@
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <link rel="stylesheet" href="/css/style.css" media="screen">
-  <!--[if lte IE 7]><link rel="stylesheet" href="/css/style.ie7.css" media="screen" /><![endif]-->
-  <link rel="stylesheet" href="/css/style.responsive.css" media="all">
-  <script src="/js/jquery.js"></script>
-  <script src="/js/script.js"></script>
-  <script src="/js/script.responsive.js"></script>
-  <style>.cangyun-content .cangyun-postcontent-0 .layout-item-0 { margin-top: 5px;margin-bottom: 5px;  }
-  .cangyun-content .cangyun-postcontent-0 .layout-item-1 { border-top-width:1px;border-top-style:Solid;border-top-color:#DEDEDE;margin: 0px;  }
-  .cangyun-content .cangyun-postcontent-0 .layout-item-2 { color: #E8E8E8; background: #FFFDFA url('images/8d9fd.png') no-repeat scroll; padding: 0px;  }
-  .cangyun-content .cangyun-postcontent-0 .layout-item-3 { color: #424242; background: #EDEDED;  }
-  .cangyun-content .cangyun-postcontent-0 .layout-item-4 { color: #424242; padding-right: 20px;padding-left: 20px;  }
-  .cangyun-content .cangyun-postcontent-0 .layout-item-5 { margin-top: 5px;  }
-  .cangyun-content .cangyun-postcontent-0 .layout-item-6 { padding-right: 20px;padding-left: 20px;  }
-  .ie7 .cangyun-post .cangyun-layout-cell {border:none !important; padding:0 !important; }
-  .ie6 .cangyun-post .cangyun-layout-cell {border:none !important; padding:0 !important; }
-  .cangyun-page-img-thumb{max-width: 200px;overflow: hidden;}
-
-  </style>
+  <link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>

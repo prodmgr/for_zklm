@@ -1,9 +1,28 @@
-<header class="cangyun-header">
-  <div class="cangyun-shapes">
-  </div>
-  <h1 class="cangyun-headline" data-left="16.53%">
-  <a href="/">藏韵雅香</a>
-  </h1>
-  <h2 class="cangyun-slogan" data-left="14.72%">穿梭时空一起品味过往的味道</h2>
+<header>
+  <nav>
+    <a href="{{ site.baseurl }}/">首页</a>
+    {% for page in site.pages  limit:3 %}
+      {% if page.title %}
+        <a id="{{page.id}}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
 </header>
-{% include menu.html %}
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var url=document.URL;
+    if(/about/.test(url.toLowerCase()))
+    {
+      $("#about").addClass("current");
+    }
+    else if(/forrent/.test(url.toLowerCase()))
+    {
+      $("#forrent").addClass("current");
+    }
+    else if(/wanted/.test(url.toLowerCase()))
+    {
+      $("#wanted").addClass("current");
+    }
+  });
+</script>

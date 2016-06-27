@@ -1,25 +1,21 @@
- <!DOCTYPE html>
-<html dir="ltr" lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh-CN">
+
   {% include head.html %}
+
   <body>
-    <div id="cangyun-main">
-      {% include header.html %}
-      <div class="cangyun-sheet clearfix">
-        <div class="cangyun-layout-wrapper">
-          <div class="cangyun-content-layout">
-            <div class="cangyun-content-layout-row">
-              <div class="cangyun-layout-cell cangyun-content">
-                <article class="cangyun-post cangyun-article" style="min-height:450px">
-                  <div class="cangyun-postcontent cangyun-postcontent-0 clearfix">
-                    {{ content }}
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-        {% include footer.html %}
+
+    {% include header.html %}
+
+    <div class="page">
+      <div class="pagewrapper">
+        {{ content }}        
       </div>
+
     </div>
+
+    {% include footer.html %}
+
   </body>
+
 </html>

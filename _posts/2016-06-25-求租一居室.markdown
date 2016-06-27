@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "求租"
+date:   2016-06-25
+category: wanted
+location: 枣营
+type: 整租
+room: 1
+---
+
+没内容啊

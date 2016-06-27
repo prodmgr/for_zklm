@@ -1,0 +1,88 @@
+/*以下元素是为了让页脚固定在底部*/
+html,body{height: 100%;margin:0;padding:0;}
+.wrapper{
+  min-height: 100%;
+  height:auto !important;
+  position:relative; /*忘了加这句，导致footer下面多出来一条空白*/
+}
+header {
+  width: 100%;
+  height: 4em;
+  background-color: #26282a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 5px 10px #bbb;
+}
+.page{
+  padding-bottom: 4em; /*为footer留出4倍行距，因为footer高度是5倍行距*/
+  padding-top: 4em; /*如果用margin-top:4em的话，会导致页面拉长，右侧出现滚动条*/
+
+}
+footer{
+  position:absolute;
+  bottom:0;
+  height:4em;
+  width:100%;
+  min-width:1000px;
+  background-color: #26282a;
+  box-shadow: 0 -5px 10px #bbb;
+}
+/*/以上元素是为了让页脚固定在底部*/
+a {text-decoration: none;color:#555;}
+a:hover{color: #429ad0}
+.clear{clear:both;}
+.pagewrapper{
+  width:970px;
+  display: table;
+  margin:0 auto;
+}
+
+header nav{
+  width: 970px;
+  line-height: 60px;
+  margin: 0 auto;
+}
+
+header nav a{
+  display: table-cell;
+  width:10em;
+  text-align: center;
+  font-size: 110%;
+}
+header nav a:hover, .current{
+  color:rgb(250,110,110);
+  background-color: #2d3e50;
+}
+
+/**/
+.sectionwrapper{margin-top: 2em;height: auto;min-height: 420px}
+.sectioncolumn{
+  float:left;
+  min-height: 400px;
+  background-color: #fff;
+  display: table-cell;
+  box-shadow: 5px 5px 15px #bbb;
+  width:100%;
+}
+.sectioninner{padding:15px;min-height: 360px}
+
+h1{font-size:2em;}
+h2{font-size: 1.25em;}
+h3{font-style: 1.1em; font-style: italic;}
+h1,h2,h3,h4,h5,h6{text-align: center;}
+
+.subject{padding:15px;color:#429ad0;background:#ddd;}
+
+li.infolist{
+  margin-left: 1em;
+  overflow:hidden;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+li.infolist a{font-size: 90%;}
+.more {text-align: right;font-size: 90%;margin:5px 15px; }
+
+section.titlelist{margin:10px auto;width:90%;height:auto;overflow-wrap: hidden}
+/**/

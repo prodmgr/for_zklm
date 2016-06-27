@@ -1,0 +1,37 @@
+---
+layout: page
+title: 求租信息
+permalink: /wanted/
+id: wanted
+---
+<div class="sectioncolumn" style="width:250px;">
+  <h2 class="subject">最新租客求租信息</h2>
+  <ul>
+    {% for post in site.categories.wanted limit:5 %}
+      <li class="infolist">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%m-%-d"}}&nbsp;&nbsp; {{ post.title }}</a>
+      </li>
+    {% endfor %}
+    <div class="more">
+        <a href="/wanted">
+        更多>>
+      </a>
+    </div>
+  </ul>
+</div>
+
+<div class="sectioncolumn" style="width: 700px;margin-left:20px">
+  <div class="sectioninner">
+    <h1>租客求租信息</h1>
+    <h2>&nbsp;</h2>
+    <section class="titlelist">
+      <ul>
+        {% for post in site.categories.wanted %}
+          <li class="infolist">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%Y-%m-%-d"}}&nbsp;&nbsp; {{ post.title }}</a>
+      </li>
+        {% endfor%}
+      </ul>
+    </section>
+  </div>
+</div>
