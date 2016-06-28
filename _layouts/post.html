@@ -2,13 +2,23 @@
 layout: page
 ---
 <div class="sectioncolumn">
-  <div class="sectioninner">
+  <div class="sectioninner" style="padding:30px">
     <h1>{{page.title}}</h1>
     <h3>{{page.tag}}</h3>
+    <div style="margin-bottom: 20px">
+      位置/商圈：{{page.location}}<br>
+      交通线路：{{page.traffic}}<br>
+      类型：{{page.type}}<br>
+      居室：{{page.room}}<br>
+      面积：{{page.area}}<br>
+      价格：{{page.price}}<br>
+      联系人（群昵称）：{{page.contact}}
+    </div>
+    <h3>详细描述</h3>
       {{ content }}
     
   </div>
-  <div class="more">
+  <div class="more" style="margin: auto 50px 20px auto">
     <a href="#" onclick="history.go(-1)">返回</a>
   </div>
 </div>
