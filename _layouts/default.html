@@ -5,17 +5,18 @@
 
   <body>
 
+    <div class="wrapper">   <!-- 忘了加wrapper div，导致footer飞起来，教训啊，教训 -->
     {% include header.html %}
 
-    <div class="page">
-      <div class="pagewrapper">
-        {{ content }}        
+      <div class="page">
+        <div class="pagewrapper">
+          {{ content }}        
+        </div>
+
       </div>
 
-    </div>
-
     {% include footer.html %}
-
+    </div>
   </body>
 
 </html>

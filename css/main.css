@@ -28,6 +28,7 @@ footer{
   min-width:1000px;
   background-color: #26282a;
   box-shadow: 0 -5px 10px #bbb;
+  clear: both;
 }
 /*/以上元素是为了让页脚固定在底部*/
 a {text-decoration: none;color:#555;}
