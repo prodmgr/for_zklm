@@ -2,7 +2,7 @@
 layout: post
 title:  "丰台科技园区欧尚边阁楼出租 900/月"
 date:   2016-12-12
-category: forrent
+category: rented
 location: "丰台科技园"
 traffic: "地铁九号线科怡路"
 baidumap: /maps/ffengtaifangzhu.html

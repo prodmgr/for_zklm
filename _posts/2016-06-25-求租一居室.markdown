@@ -2,7 +2,7 @@
 layout: post
 title:  "求租"
 date:   2016-06-25
-category: wanted
+category: test
 tag: 团结湖,10号线
 location: 团结湖
 type: 整租

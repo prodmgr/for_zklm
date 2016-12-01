@@ -2,7 +2,7 @@
 layout: post
 title:  "芍药居出租芍药居出租芍药居出租芍药居出租芍药居出租"
 date:   2016-06-29
-category: forrent
+category: test
 location: 芍药居
 type: 合租
 room: 1
