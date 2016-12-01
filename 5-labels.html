@@ -1,0 +1,28 @@
+---
+layout: page
+title: 筛选房源
+permalink: /tags/
+id: tags
+---
+
+<div class="sectioncolumn">
+  <div class="sectioninner">
+    {% for tag in site.tags %}
+      <!-- <li>
+        {% for post in tag[1] %}
+          {{ post.title }}
+        {% endfor %}
+      </li> -->
+      <span>
+        {{tag[0]}}
+      </span>
+      <span>
+        {{tag[1]}}
+      </span>
+    {% endfor %}
+
+    {%%}
+
+    {%%}
+  </div>
+</div>
