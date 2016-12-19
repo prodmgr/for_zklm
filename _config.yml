@@ -1,15 +1,13 @@
 # Site settings
 title: 租客联盟信息汇总站
 copyright: 租客联盟成员&copy;李棉酷
-email: your-email@domain.com
+email: 2468496@qq.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  租客联盟信息汇总站
 baseurl: # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://zukelm.com" # the base hostname & protocol for your site
+twitter_username: 李棉酷
+github_username:  李棉酷
 
 # Build settings
 markdown: kramdown
